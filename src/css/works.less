@@ -1,0 +1,39 @@
+@import url(var.less);
+h2{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.works {
+    padding: 20px 0;
+}
+
+.works__image {
+    display: grid;
+    gap: 20px;
+}
+
+.works__item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.works__item img:hover {
+    transform: scale(1.05);
+}
+
+/* Desktop layout (width >= 777px) */
+@media (min-width: 777px) {
+    .works__image {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile layout (width < 777px) */
+@media (max-width: 776px) {
+    .works__image {
+        grid-template-columns: 1fr;
+    }
+}

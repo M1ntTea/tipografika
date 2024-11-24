@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@gray: #D9D9D9;
+@black: #3A3A3A;
+@dark: #000000;
+@white: #ffffff;
+
+// Шрифт
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url(../font/FuturaPTMedium.otf);
+}
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url(../font/FuturaPTBook.otf);
+}
+@font-face {
+    font-family: 'FuturaPTLight';
+    src: url(../font/FuturaPTLight.otf);
+}
+@font-face {
+    font-family: 'GoogleSans-Medium';
+    src: url(../font/GoogleSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url(../font/GoogleSans-Regular.ttf);
+}
+section{
+    // max-width: 1440px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+@media (max-width: 745px) {
+    .section {
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+}
+@media (max-width: 376px) {
+    .section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+p, h2, h3{
+    font-family: 'FuturaPTLight';
+}
+h1 {
+    font-family: 'FuturaPTBook';
+}
+.stage{
+    font-family: 'GoogleSans-Regular';
+    font-size: 25px;
+}
+.price{
+    font-family: 'GoogleSans-Regular';
+    font-size: 40px;
+}
+.button__gray () {
+    background: @gray;
+    color: @black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 0.85em;
+    padding-left: 0.85em;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 35px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: inline-block;
+}
+.button__black(){
+    background: @black;
+    color: @white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 35px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: inline-block;
+}
+.button__day(){
+    background: @black;
+    color: @white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 15px;
+    font-family: 'GoogleSans-Regular';
+    text-align: center;
+    display: inline-block;
+}

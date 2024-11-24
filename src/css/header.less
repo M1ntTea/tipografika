@@ -1,0 +1,56 @@
+@import url(var.less);
+#header {
+    display: flex;
+    justify-content: flex-start; /* Бургер справа */
+    background-color: #323232;
+    padding: 13.5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 140px;
+}
+
+#hbgBtn {
+    cursor: pointer; /* Указатель при наведении */
+}
+
+#menu {
+    display: none; /* Скрываем меню по умолчанию */
+    background-color: #323232;
+    position: absolute; /* Абсолютное позиционирование для меню */
+    top: 45px; /* Позиционируем под хедером */
+    left: 0;
+    width: 320px; /* Ширина меню */
+    height: 100%;
+    z-index: 3;
+}
+#menu__inner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.menu__inner__two{
+    display: flex;
+    flex-direction: column;
+}
+.menu__inner__two__img{
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 15px;
+    width: 30px;
+    gap: 10px;
+}
+
+#menu p, a {
+    color: #fff;
+    display: block; /* Каждое меню на новой строке */
+    padding: 10px;
+    padding-left: 15px;
+    font-family: 'FuturaPTLight';
+}
+
+/* Показать меню при наведении на бургер на больших экранах */
+@media (min-width: 744px) {
+    #hbgBtn:hover + .menu {
+        display: block; /* Показываем меню при наведении */
+    }
+}
