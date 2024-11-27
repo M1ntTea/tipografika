@@ -1,12 +1,17 @@
 @import url(var.less);
 #header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: flex-start; /* Бургер справа */
     background-color: #323232;
     padding: 13.5px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 140px;
+    z-index: 100;
 }
 
 #hbgBtn {
@@ -15,18 +20,25 @@
 
 #menu {
     display: none; /* Скрываем меню по умолчанию */
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #323232;
-    position: absolute; /* Абсолютное позиционирование для меню */
-    top: 45px; /* Позиционируем под хедером */
+    position: fixed; // отности body /* Позиционируем под хедером */
+    // bottom: 0;
     left: 0;
-    width: 320px; /* Ширина меню */
-    height: 100%;
+    width: 320px; /* Ширина меню */ // для мобилки сделать максимум
+    min-height: 95vh;
+    //-webkit-fill-available;
     z-index: 3;
 }
+
 #menu__inner {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+}
+.menu__inner__one {
+    top: 45px;
 }
 .menu__inner__two{
     display: flex;

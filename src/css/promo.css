@@ -4,6 +4,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+main {
+  padding-top: 45px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 @font-face {
   font-family: 'FuturaPTMedium';
   src: url(../font/FuturaPTMedium.otf);
@@ -29,13 +34,13 @@ section {
   margin-right: 30px;
 }
 @media (max-width: 745px) {
-  .section {
+  section {
     margin-left: 17px;
     margin-right: 17px;
   }
 }
-@media (max-width: 376px) {
-  .section {
+@media (max-width: 567px) {
+  section {
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -48,6 +53,11 @@ h3 {
 h1 {
   font-family: 'FuturaPTBook';
 }
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
 .stage {
   font-family: 'GoogleSans-Regular';
   font-size: 25px;
@@ -56,11 +66,28 @@ h1 {
   font-family: 'GoogleSans-Regular';
   font-size: 40px;
 }
+.button__black__mobile {
+  background: #3A3A3A;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0.1em;
+  padding-bottom: 0.25em;
+  padding-right: 1.85em;
+  padding-left: 1.85em;
+  margin-top: 2rem;
+  min-width: 60px;
+  min-height: 25px;
+  font-size: 17px;
+  font-family: 'FuturaPTlight';
+  text-align: center;
+  display: none;
+}
 .promo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 9rem;
+  margin: 12rem 0;
 }
 .promo .container {
   max-width: 960px;
@@ -69,4 +96,30 @@ h1 {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+@media (max-width: 567px) {
+  .button__buy .button__black__mobile {
+    background: #3A3A3A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.1em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    margin-top: 2rem;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 17px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: none;
+    display: flex;
+  }
+  .promo {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+  }
 }

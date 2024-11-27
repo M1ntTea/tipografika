@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/">
     <!-- <link rel="stylesheet" href="./src/css/elements/"> -->
@@ -18,7 +18,7 @@
                         <line x2="33" transform="translate(192.5 -4904.5)" fill="none" stroke="#fff" stroke-width="1.5"/>
                         <line x2="33" transform="translate(192.5 -4889.5)" fill="none" stroke="#fff" stroke-width="1.5"/>
                     </g>
-                </svg>
+                </svg>     
             </div>
         </header>
         <!-- Бургер меню -->
@@ -41,7 +41,9 @@
                         <img src="./src/images/icon/whatsapp_white.svg" alt="Whatsapp" class="social_networ">
                         <img src="./src/images/icon/instagram_white.svg" alt="Instagram" class="social_network">
                     </div>
-                    <p>Instagram запрещена на территории РФ</p>
+                    <div class="mune__inner__instagram">
+                        <p>Instagram запрещена на территории РФ</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,6 +53,9 @@
         <section class="promo">
             <div class="container">
                 <img src="./src/images/logo.svg" alt="" class="logo">
+            </div>
+            <div class="button__buy">
+                <a href="#"><button class="button__black__mobile">Обсудить проект</button></a>
             </div>
         </section>
         <!-- Блок Бизнес -->
@@ -76,23 +81,54 @@
             </div>
         </section>
         <!-- Блок Работ -->
+
+
+        <!-- <section class="works">
+            <div class="container">
+                <h2>Работы</h2>
+                <div class="works__images">
+                
+                    <div class="works__item">
+                        <img src="./src/images/work1.png" alt="work2">
+                    </div>
+                    <div class="works__item">
+                        <img src="./src/images/work2.png" alt="work2">
+                    </div>
+                    <div class="works__item">
+                        <img src="./src/images/work3.png" alt="work2">
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
         <section class="works">
             <div class="container">
                 <h2>Работы</h2>
-                <div class="works__image">
-                
+                <div class="works__images">
                     <div class="works__item">
-                        <img src="./src/images/icon/fav.svg" alt="work2">
+                        <img src="./src/images/icon/fav.svg" alt="work1">
+                    </div>
+                    <div class="works__item rectangle">
+                        <img src="./src/images/icon/fav.svg" alt="work6">
                     </div>
                     <div class="works__item">
                         <img src="./src/images/icon/fav.svg" alt="work2">
                     </div>
                     <div class="works__item">
-                        <img src="./src/images/icon/fav.svg" alt="work2">
+                        <img src="./src/images/icon/fav.svg" alt="work3">
+                    </div>
+                    <div class="works__item">
+                        <img src="./src/images/icon/fav.svg" alt="work4">
+                    </div>
+                    <div class="works__item rectangle">
+                        <img src="./src/images/icon/fav.svg" alt="work5">
                     </div>
                 </div>
             </div>
         </section>
+
+
         <!-- Услуги и цены -->
         <section class="services_and_prices">
             <div class="container">
@@ -112,9 +148,9 @@
                                 <button class="button__black">Обсудить</button>
                                 <span class="price">От 15 000 ₽</span>
                             </div>
-                            <!-- <div class="card__inner__img"> -->
+                            <div class="card__inner__img">
                                 <img src="./src/images/skeleton1.svg" alt="" class="skeleton">
-                            <!-- </div> -->
+                            </div>
                         </div>
 
                         <div class="card__inner">
@@ -129,10 +165,10 @@
                                 </p>
                                 <button class="button__black">Обсудить</button>
                                 <span class="price">От 30 000 ₽</span>
+                                <div class="card__inner__img">
+                                    <img src="./src/images/skeleton2.svg" alt="" class="skeleton">
+                                </div>
                             </div>
-                            <!-- <div class="card__inner__img"> -->
-                                <img src="./src/images/skeleton2.svg" alt="" class="skeleton">
-                            <!-- </div> -->
                         </div>
                     </div>
     
@@ -147,13 +183,12 @@
                                 продуманной внутренней архитектурой, 
                                 а так-же личным кабинетом.
                             </p>
-                            <button class="button__black">Обсудить</button>
+                            <a href="#"><button class="button__black">Обсудить</button></a>
                             <span class="price">от 100 000 ₽</span>
-                        </div>
-                        <!-- <div class="card__inner__img"> -->
-                            <img src="./src/images/skeleton3.svg" alt="" class="skeleton">
-                        <!-- </div> -->
-                    
+                            <div class="card__inner__img">
+                                <img src="./src/images/skeleton3.svg" alt="" class="skeleton">
+                            </div>
+                        </div>                  
                     </div>
         
                     <div class="card__inner">
@@ -168,21 +203,24 @@
                             </p>
                             <button class="button__black">Обсудить</button>
                             <span class="price">от 40 000 ₽</span>
-                        </div>
-                        <!-- <div class="card__inner__img"> -->
-                            <img src="./src/images/skeleton4.svg" alt="" class="skeleton">
-                        <!-- </div> -->
+                            <div class="card__inner__img">
+                                <img src="./src/images/skeleton4.svg" alt="" class="skeleton">
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div> 
         </section>
         <!-- Дополнительные услуги -->
-        <section class="additional_services">
+        <section class="additional__services">
             <div class="container">
-                <h2>Что вы еще можете разработать?</h2>
-                    <div class="additional_services_inner">
+                <div class="additional__services_h2">
+                    <h2>Что вы еще можете разработать?</h2>
+                </div>
+
+                    <div class="additional__services_inner">
     
-                        <div class="inner_info">
+                        <div class="inner__info">
                             <h3>Telegram miniapp</h3>
                             <p>
                                 Разработка мини-приложений
@@ -190,20 +228,20 @@
                                 от небольших страниц, до магазинов и игр
                             </p>
                             <span class="price">от 10 000 ₽</span>
-                            <button class="button_black">Обсудить</button>
+                            <button class="button__black">Обсудить</button>
                         </div>
     
-                        <div class="inner_info">
+                        <div class="inner__info">
                             <h3>Дизайн макет</h3>
                             <p>
                                 Разработка дизайн-макета
                                 сайта или приложения в Figma.
                             </p>
                             <span class="price">от 7 000 ₽</span>
-                            <button class="button_black">Обсудить</button>
+                            <button class="button__black">Обсудить</button>
                         </div>
     
-                        <div class="inner_info">
+                        <div class="inner__info">
                             <h3>Design support</h3>
                             <p>
                                 Обновление и редактирование контента,
@@ -211,10 +249,10 @@
                                 создание баннеров для социальных сетей.     
                             </p>
                             <span class="price">от 15 000 ₽</span>
-                            <button class="button_black">Обсудить</button>
+                            <button class="button__black">Обсудить</button>
                         </div>
     
-                        <div class="inner_info">
+                        <div class="inner__info">
                             <h3>Иллюстрации</h3>
                             <p>
                                 Рекламные баннеры, презентации, 
@@ -222,7 +260,7 @@
                                 полиграфические изделия.   
                             </p>
                             <span class="price">от 1 500 ₽</span>
-                            <button class="button_black">Обсудить</button>
+                            <button class="button__black">Обсудить</button>
                         </div>
                     </div>
             </div>
@@ -230,20 +268,24 @@
         <!-- Мы работаем дистанционно -->
          <section class="remotely">
             <div class="container">
-                <img src="./src/images/icon/figma.svg" alt="">
-                <img src="./src/images/icon/whatsapp.svg" alt="">
-                <h2>
-                    Мы работаем дистанционно 
-                    и всегда готовы помочь с любыми
-                    вопросами и задачами.
-                </h2>
-                <p>
-                    Все этапы работы над проектом описаны в 8 этапах, 
-                    результат и тех.задание согласовывается 
-                    c вами заранее.
-                </p>
-                <img src="./src/images/icon/telegram.svg" alt="">
-                <img src="./src/images/icon/discord.svg" alt="">
+                <img src="./src/images/icon/figma.svg" alt="" class="figma">
+                <img src="./src/images/icon/whatsapp.svg" alt="" class="whatsapp">
+                <div class="remotely__inner">
+                    <!-- <div class="remotely__inner__h2"> -->
+                        <h2>
+                            Мы работаем дистанционно 
+                            и всегда готовы помочь с любыми
+                            вопросами и задачами.
+                        </h2>
+                    <!-- </div> -->
+                    <p>
+                        Все этапы работы над проектом описаны в 8 этапах, 
+                        результат и тех.задание согласовывается <br>
+                        c вами заранее.
+                    </p>
+                </div>
+                <img src="./src/images/icon/telegram.svg" alt="" class="telegram">
+                <img src="./src/images/icon/discord.svg" alt="" class="discord">
             </div>
         </section>
         <!-- Этапы работ -->

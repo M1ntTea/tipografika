@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 9rem;
+    margin: 12rem 0;
 }
 .promo .container {
     max-width: 960px;
@@ -15,3 +15,15 @@
 }
 
 // Мобильная версия
+@media (max-width: 567px) {
+    .button__buy .button__black__mobile {
+        .button__black__mobile();
+        display: flex;
+    }
+    .promo {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 9rem;
+        margin-bottom: 7rem;
+    }
+}

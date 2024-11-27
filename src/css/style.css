@@ -4,6 +4,10 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+main {
+  padding-top: 45px;
+  margin: 0 auto;
+}
 @font-face {
   font-family: 'FuturaPTMedium';
   src: url(../font/FuturaPTMedium.otf);
@@ -29,13 +33,13 @@ section {
   margin-right: 30px;
 }
 @media (max-width: 745px) {
-  .section {
+  section {
     margin-left: 17px;
     margin-right: 17px;
   }
 }
-@media (max-width: 376px) {
-  .section {
+@media (max-width: 567px) {
+  section {
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -48,6 +52,11 @@ h3 {
 h1 {
   font-family: 'FuturaPTBook';
 }
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
 .stage {
   font-family: 'GoogleSans-Regular';
   font-size: 25px;
@@ -56,8 +65,29 @@ h1 {
   font-family: 'GoogleSans-Regular';
   font-size: 40px;
 }
+.button__black__mobile {
+  background: #3A3A3A;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0.1em;
+  padding-bottom: 0.25em;
+  padding-right: 1.85em;
+  padding-left: 1.85em;
+  margin-top: 2rem;
+  min-width: 60px;
+  min-height: 25px;
+  font-size: 17px;
+  font-family: 'FuturaPTlight';
+  text-align: center;
+  display: none;
+}
 #header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   justify-content: flex-start;
   /* Бургер справа */
   background-color: #323232;
@@ -65,6 +95,7 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 140px;
+  z-index: 100;
 }
 #hbgBtn {
   cursor: pointer;
@@ -73,21 +104,23 @@ h1 {
 #menu {
   display: none;
   /* Скрываем меню по умолчанию */
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #323232;
-  position: absolute;
-  /* Абсолютное позиционирование для меню */
-  top: 45px;
-  /* Позиционируем под хедером */
+  position: fixed;
   left: 0;
   width: 320px;
   /* Ширина меню */
-  height: 100%;
+  min-height: 95vh;
   z-index: 3;
 }
 #menu__inner {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
+}
+.menu__inner__one {
+  top: 45px;
 }
 .menu__inner__two {
   display: flex;
@@ -120,7 +153,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 9rem;
+  margin: 12rem 0;
 }
 .promo .container {
   max-width: 960px;
@@ -129,6 +162,32 @@ a {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+@media (max-width: 567px) {
+  .button__buy .button__black__mobile {
+    background: #3A3A3A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.1em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    margin-top: 2rem;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 17px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: none;
+    display: flex;
+  }
+  .promo {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+  }
 }
 .business {
   padding-bottom: 240px;
@@ -190,7 +249,10 @@ a {
   display: flex;
   margin-left: auto;
 }
-@media (max-width: 745px) {
+.container__text {
+  margin-top: 10vh;
+}
+@media (max-width: 990px) {
   #par1,
   #par2,
   #par3 {
@@ -244,60 +306,158 @@ a {
   #par3 {
     max-width: 60rem;
   }
+  .business {
+    padding-bottom: 180px;
+  }
 }
-h2 {
-  font-size: 50px;
-  font-weight: lighter;
-  margin-bottom: 20px;
+@media (max-width: 567px) {
+  #par1,
+  #par2,
+  #par3 {
+    font-size: 20px;
+  }
+  #par1 {
+    max-width: 21rem;
+  }
+  #par2 {
+    max-width: 24rem;
+  }
+  #par3 {
+    max-width: 26rem;
+  }
+  .container .button__gray {
+    background: #D9D9D9;
+    color: #3A3A3A;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 0.85em;
+    padding-left: 0.85em;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 35px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+  }
+  .container .button__black {
+    background: #3A3A3A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 35px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: inline-block;
+    display: none;
+  }
+  .container .button__black__mobile {
+    background: #3A3A3A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.1em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    margin-top: 2rem;
+    min-width: 60px;
+    min-height: 25px;
+    font-family: 'FuturaPTlight';
+    text-align: center;
+    display: none;
+    font-size: 17px;
+    position: absolute;
+    display: flex;
+  }
+  .business {
+    padding-bottom: 100px;
+  }
 }
+/* Basic styling */
 .works {
   padding: 20px 0;
+  margin-bottom: 240px;
 }
-.works__image {
+.works__images {
   display: grid;
-  gap: 20px;
+  gap: 10px;
+}
+.works__item {
+  position: relative;
+}
+/* Squares */
+.works__item:nth-child(-n+4) {
+  padding-bottom: 100%;
+  /* 1:1 aspect ratio */
+}
+/* Rectangles */
+.works__item.rectangle {
+  padding-bottom: 50%;
+  /* 2:1 aspect ratio */
 }
 .works__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-.works__item img:hover {
-  transform: scale(1.05);
+  height: 100%;
+  object-fit: cover;
 }
 /* Desktop layout (width >= 777px) */
 @media (min-width: 777px) {
-  .works__image {
-    grid-template-columns: repeat(3, 1fr);
+  .works__images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .works__item.rectangle {
+    grid-column: span 2;
+    /* Rectangles span two columns */
   }
 }
 /* Mobile layout (width < 777px) */
 @media (max-width: 776px) {
-  .works__image {
+  .works__images {
     grid-template-columns: 1fr;
   }
+  .business {
+    padding-bottom: 100px;
+  }
+}
+.services_and_prices {
+  margin-bottom: 240px;
 }
 .button__day {
   background: #3A3A3A;
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  margin-top: 10px;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  padding-right: 1.85em;
-  padding-left: 1.85em;
-  min-width: 60px;
-  min-height: 25px;
+  padding-right: 1em;
+  padding-left: 1em;
+  height: 25px;
   font-size: 15px;
   font-family: 'GoogleSans-Regular';
   text-align: center;
   display: inline-block;
-  max-width: 140px;
+  width: 120px;
 }
 h3 {
   font-size: 30px;
+}
+.card__inner__info a {
+  padding: 0;
+  padding-left: 0;
 }
 .card span {
   font-size: 25px;
@@ -306,8 +466,10 @@ h3 {
   font-size: 20px;
   margin-left: 0;
   max-width: 150px;
+  margin-top: 0px;
 }
 .card {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -315,23 +477,104 @@ h3 {
   padding-top: 10px;
 }
 .card__inner {
+  position: relative;
   align-self: start;
   background: #D9D9D9;
   border-radius: 5px;
   width: 100%;
+  height: 473px;
 }
 .card__inner__info {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   z-index: 2;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.card__inner__info h3 {
+  font-family: 'FuturaPTBook';
+}
+.card__inner__info p {
+  font-size: 20px;
+  width: 300px;
 }
 .card__inner__img {
+  position: absolute;
   display: flex;
   justify-content: end;
-  z-index: -1;
+  height: 270px;
+  right: 0;
+  bottom: 0;
 }
 .skeleton {
+  position: absolute;
+}
+.additional__services {
+  margin-bottom: 240px;
+}
+.additional__services .container {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: space-between;
+}
+.additional__services_h2 {
+  max-width: 19rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.additional__services_inner {
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+.inner__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin-top: 40px;
+  gap: 10px;
+}
+.inner__info h3 {
+  width: 230px;
+  font-family: 'FuturaPTBook';
+}
+.inner__info p {
+  width: 280px;
+}
+.inner__info span {
+  font-size: 25px;
+  width: 140px;
+}
+.inner__info .button__black {
+  font-size: 20px;
+  margin-left: 0;
+  max-width: 150px;
+  margin-top: 0;
+}
+.remotely__inner {
+  text-align: center;
+  margin: 0 auto;
+}
+.remotely__inner h2 {
+  width: 650px;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+.remotely__inner p {
+  width: 390px;
+  font-size: 20px;
+}
+.figma {
+  position: absolute;
+  margin-left: 330px;
 }

@@ -29,9 +29,13 @@
     display: flex;
     margin-left: auto;
 }
-
+.container__text {
+    margin-top: 10vh;
+}
 // Планшетная версия
-@media (max-width: 745px) {
+
+// Мобильная версия | адаптив
+@media (max-width: 990px) {
     #par1, #par2, #par3{
         font-size: 30px;   
     }
@@ -40,7 +44,7 @@
         margin-right: 0.5rem;
         font-size: 23px;
     }
-    .container .button__black{
+    .container .button__black {
         .button__black();
         display: flex;
         margin-left: auto;
@@ -55,9 +59,38 @@
     #par3 {
         max-width: 60rem;
     }
+    .business{
+        padding-bottom: 180px;
+    }
 }
-
-// Мобильная версия
-@media (max-width: 376px) {
-
+@media (max-width: 567px) {
+    #par1, #par2, #par3{
+        font-size: 20px;   
+    }
+    #par1 {
+        max-width: 21rem;
+    }
+    #par2 {
+        max-width: 24rem; 
+    }
+    #par3 {
+        max-width: 26rem; 
+    }
+    .container .button__gray {
+        .button__gray();
+        font-size: 17px;
+    }
+    .container .button__black {
+        .button__black();
+        display: none;
+    }
+    .container .button__black__mobile {
+        .button__black__mobile();
+        font-size: 17px;
+        position: absolute;
+        display: flex;
+    }
+    .business{
+        padding-bottom: 100px;
+    }
 }
