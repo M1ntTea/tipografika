@@ -5,8 +5,7 @@
   text-decoration: none;
 }
 main {
-  padding-top: 45px;
-  max-width: 1920px;
+  padding-top: 1px;
   margin: 0 auto;
 }
 @font-face {
@@ -87,7 +86,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 12rem 0;
+  margin-bottom: 12rem;
+  margin-top: 15rem;
 }
 .promo .container {
   max-width: 960px;

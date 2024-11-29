@@ -1,35 +1,111 @@
 @import url(./var.less);
+// .remotely {
+
+// }
+// .container {
+
+// }
+// .remotely__inner {
+// }
+// .remotely__inner {
+//     text-align: center;
+//     margin: 0 auto;
+// }
+// .remotely__inner h2 {
+//     width: 650px;
+//     margin-bottom: 0;
+//     font-size: 50px;
+// }
+// .remotely__inner p {
+//     width: 390px;
+//     font-size: 20px;
+// }
+// .figma {
+//     position: absolute;
+//     margin-left: 330px;
+// }
+// .whatsapp {
+
+// }
+// .telegram {
+
+// }
+// .discord {
+
+// }
+/* Basic styling */
 .remotely {
-
-}
-.container {
-
-}
-.remotely__inner {
-}
-.remotely__inner {
-    text-align: center;
+    padding: 20px 0;
+    text-align: center; /* Center align the text */
     margin: 0 auto;
+        display: flex;
+            justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
-.remotely__inner h2 {
-    width: 650px;
-    margin-bottom: 0;
-    font-size: 50px;
-}
+
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 20px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+// }
 .remotely__inner p {
-    width: 390px;
+    margin: 0 auto;
     font-size: 20px;
 }
-.figma {
+.remotely__inner h2 {
+    font-size: 50px;
+}
+.remotely__inner {
+    flex: 1;
+    max-width: 700px; 
+    margin: 0 auto; 
+}
+
+.remotely__inner h2,
+.remotely__inner p {
+    text-align: center; 
+}
+.remotely .container {
+    position: relative;
+}
+.figma, .whatsapp, .telegram, .discord {
     position: absolute;
-    margin-left: 330px;
+}
+.figma {
+    left: 0;
+    margin-left: -6px;
+    margin-top: -50px;
 }
 .whatsapp {
-
+    right: 0;
+    margin-right: -20px;
+    margin-top: -25px;
 }
 .telegram {
-
+    left: 0;
+    margin-top: -175px;
 }
 .discord {
+    right: 0;
+    margin-top: -145px;
+    margin-right: 15px;
+}
+@media (min-width: 777px) {
+    .remotely__inner {
+        margin: 0 20px; 
+    }
+}
 
+@media (max-width: 776px) {
+    .container {
+        flex-direction: column;
+    }
+    .remotely__inner {
+        margin: 20px 0;
+    }
 }

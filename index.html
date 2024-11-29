@@ -11,7 +11,7 @@
 <body>
     <main>
         <!-- Шапка -->
-        <header id="header">
+        <!-- <header id="header">
             <div id="hbgBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8.5" viewBox="0 0 33 16.5">
                     <g transform="translate(-192.5 4905.25)">
@@ -20,9 +20,9 @@
                     </g>
                 </svg>     
             </div>
-        </header>
+        </header> -->
         <!-- Бургер меню -->
-        <div id="menu">
+        <!-- <div id="menu">
             <div id="menu__inner">
                 <div class="menu__inner__one">
                     <a href="#">Создание сайтов</a>
@@ -46,7 +46,30 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <header class="header">
+            <div class="icon-container">
+              <div id="menuicon">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+              </div>
+            </div>
+            <div class="mobile-menu">
+              <ul class="menu">
+                <li class="menu-item"><a href="#">Создание сайтов</a>
+                </li>
+                <li class="menu-item"><a href="#">Веб приложения</a>
+                </li>
+                <li class="menu-item"><a href="#">Telegram mini app</a>
+                </li>
+                <li class="menu-item"><a href="#">Дизайн</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+      
+        <!-- </div> -->
+              <script src="./src/js/main.js"></script>
 
         <script src="./src/js/main.js"></script>
         <!-- Блок Промо -->
@@ -137,16 +160,22 @@
                     <div class="card">
                         <div class="card__inner">
                             <div class="card__inner__info">
-                                <button class="button__day">14-20 дней</button>
-                                <h3>Одностраничный сайт</h3>
-                                <p>Landing page</p>
-                                <p>
-                                    Небольшой сайт для демонстрации 
-                                    одного или нескольких товаров, 
-                                    услуг или мероприятий.
-                                </p>
-                                <button class="button__black">Обсудить</button>
-                                <span class="price">От 15 000 ₽</span>
+                                <div class="information__top">
+                                    <button class="button__day">14-20 дней</button>
+                                </div>
+                                <div class="information__center">
+                                    <h3>Одностраничный сайт</h3>
+                                    <p>Landing page</p>
+                                    <p>
+                                        Небольшой сайт для демонстрации 
+                                        одного или нескольких товаров, 
+                                        услуг или мероприятий.
+                                    </p>
+                                    <button class="button__black">Обсудить</button>
+                                </div>
+                                <div class="information__bottom">
+                                    <span class="price">От 15 000 ₽</span>
+                                </div>
                             </div>
                             <div class="card__inner__img">
                                 <img src="./src/images/skeleton1.svg" alt="" class="skeleton">
@@ -155,16 +184,22 @@
 
                         <div class="card__inner">
                             <div class="card__inner__info">
-                                <button class="button__day">14-35 дней</button>
-                                <h3>Многостраничный сайт</h3>
-                                <p>Company website</p>
-                                <p>
-                                    Сайт для более серьезных 
-                                    намерений, предпочтительно для 
-                                    компаний или среднего бизнеса.
-                                </p>
-                                <button class="button__black">Обсудить</button>
-                                <span class="price">От 30 000 ₽</span>
+                                <div class="information__top">
+                                    <button class="button__day">14-35 дней</button>
+                                </div>
+                                <div class="information__center">
+                                    <h3>Многостраничный сайт</h3>
+                                    <p>Company website</p>
+                                    <p>
+                                        Сайт для более серьезных 
+                                        намерений, предпочтительно для 
+                                        компаний или среднего бизнеса.
+                                    </p>
+                                    <button class="button__black">Обсудить</button>
+                                </div>
+                                <div class="information__bottom">
+                                    <span class="price">От 30 000 ₽</span>
+                                </div>
                                 <div class="card__inner__img">
                                     <img src="./src/images/skeleton2.svg" alt="" class="skeleton">
                                 </div>
@@ -175,16 +210,22 @@
                 <div class="card">
                     <div class="card__inner">
                         <div class="card__inner__info">
-                            <button class="button__day">30-45 дней</button>
-                            <h3>Веб приложение</h3>
-                            <p>WebApp</p>
-                            <p>
-                                Ваш вебсервис с базой данных, 
-                                продуманной внутренней архитектурой, 
-                                а так-же личным кабинетом.
-                            </p>
-                            <a href="#"><button class="button__black">Обсудить</button></a>
-                            <span class="price">от 100 000 ₽</span>
+                            <div class="information__top">
+                                <button class="button__day">30-45 дней</button>
+                            </div>
+                            <div class="information__center">
+                                <h3>Веб приложение</h3>
+                                <p>WebApp</p>
+                                <p>
+                                    Ваш вебсервис с базой данных, 
+                                    продуманной внутренней архитектурой, 
+                                    а так-же личным кабинетом.
+                                </p>
+                                <a href="#"><button class="button__black">Обсудить</button></a>
+                            </div>
+                            <div class="information__bottom">
+                                <span class="price">от 100 000 ₽</span>
+                            </div>
                             <div class="card__inner__img">
                                 <img src="./src/images/skeleton3.svg" alt="" class="skeleton">
                             </div>
@@ -193,16 +234,22 @@
         
                     <div class="card__inner">
                         <div class="card__inner__info">
-                            <button class="button__day">14-35 дней</button>
-                            <h3>Интернет магазин</h3>
-                            <p>Commercial website</p>
-                            <p>
-                                Веб сайт с широким функционалом, 
-                                таким как: система поиска, каталог, 
-                                корзина и платежная система.
-                            </p>
-                            <button class="button__black">Обсудить</button>
-                            <span class="price">от 40 000 ₽</span>
+                            <div class="information__top">
+                                <button class="button__day">14-35 дней</button>
+                            </div>
+                            <div class="information__center">
+                                <h3>Интернет магазин</h3>
+                                <p>Commercial website</p>
+                                <p>
+                                    Веб сайт с широким функционалом, 
+                                    таким как: система поиска, каталог, 
+                                    корзина и платежная система.
+                                </p>
+                                <button class="button__black">Обсудить</button>
+                            </div>
+                            <div class="information__bottom">
+                                <span class="price">от 40 000 ₽</span>
+                            </div>
                             <div class="card__inner__img">
                                 <img src="./src/images/skeleton4.svg" alt="" class="skeleton">
                             </div>
@@ -214,11 +261,11 @@
         <!-- Дополнительные услуги -->
         <section class="additional__services">
             <div class="container">
-                <div class="additional__services_h2">
+                <div class="additional__services__h2">
                     <h2>Что вы еще можете разработать?</h2>
                 </div>
 
-                    <div class="additional__services_inner">
+                    <div class="additional__services__inner">
     
                         <div class="inner__info">
                             <h3>Telegram miniapp</h3>
@@ -266,20 +313,18 @@
             </div>
         </section>
         <!-- Мы работаем дистанционно -->
-         <section class="remotely">
+        <section class="remotely">
             <div class="container">
                 <img src="./src/images/icon/figma.svg" alt="" class="figma">
                 <img src="./src/images/icon/whatsapp.svg" alt="" class="whatsapp">
                 <div class="remotely__inner">
-                    <!-- <div class="remotely__inner__h2"> -->
                         <h2>
-                            Мы работаем дистанционно 
-                            и всегда готовы помочь с любыми
+                            Мы работаем дистанционно <br>
+                            и всегда готовы помочь с любыми <br>
                             вопросами и задачами.
                         </h2>
-                    <!-- </div> -->
                     <p>
-                        Все этапы работы над проектом описаны в 8 этапах, 
+                        Все этапы работы над проектом описаны в 8 этапах, <br>
                         результат и тех.задание согласовывается <br>
                         c вами заранее.
                     </p>
@@ -289,82 +334,91 @@
             </div>
         </section>
         <!-- Этапы работ -->
-         <section class="stages">
+        <section class="stages">
             <div class="container">
                 <h2>Этапы работы</h2>
-                <div class="inner_card">
-                    <div class="stage_inner_card">
-                        <span class="stage">01</span>
-                        <p class="stage_up">Знакомство и обсуждение</p>
-                        <p class="stage_low">Обсуждение требований и целей проекта с клиентом.</p>
+                <div class="inner__card">
+                    <div class="inner__card__one">
+                        <div class="stage__inner__card">
+                            <span class="stage">01</span>
+                            <p class="stage__up">Знакомство и обсуждение</p>
+                            <p class="stage__low">Обсуждение требований и целей проекта с клиентом.</p>
+                        </div>
+        
+                        <div class="stage__inner__card">
+                            <span class="stage">02</span>
+                            <p class="stage__up">Анализ продукта</p>
+                            <p class="stage__low">Исследование конкурентов и определение уникальных особенностей.</p>
+                        </div>
+        
+                        <div class="stage__inner__card">
+                            <span class="stage">03</span>
+                            <p class="stage__up">Копирайтинг</p>
+                            <p class="stage__low">Создание качественного контента, отражающего ценности бренда.</p>
+                        </div>
+        
+                        <div class="stage__inner__card">
+                            <span class="stage">04</span>
+                            <p class="stage__up">Прототипирование</p>
+                            <p class="stage__low">Разработка интерактивных макетов для визуализации структуры сайта.</p>
+                        </div>
                     </div>
-
-                    <div class="inner_card">
-                        <span class="stage">02</span>
-                        <p class="stage_up">Анализ продукта</p>
-                        <p class="stage_low">Исследование конкурентов и определение уникальных особенностей.</p>
-                    </div>
-                    
-                    <div class="inner_card">
-                        <span class="stage">03</span>
-                        <p class="stage_up">Копирайтинг</p>
-                        <p class="stage_low">Создание качественного контента, отражающего ценности бренда.</p>
-                    </div>
-
-                    <div class="inner_card">
-                        <span class="stage">04</span>
-                        <p class="stage_up">Прототипирование</p>
-                        <p class="stage_low">Разработка интерактивных макетов для визуализации структуры сайта.</p>
-                    </div>
-
-                    <div class="inner_card">
-                        <span class="stage">05</span>
-                        <p class="stage_up">Дизайн</p>
-                        <p class="stage_low">Создание эстетически привлекательного интерфейса с учетом UX.</p>
-                    </div>
-
-                    <div class="inner_card">
-                        <span class="stage">06</span>
-                        <p class="stage_up">Кодинг</p>
-                        <p class="stage_low">Программирование сайта с использованием современных технологий и стандартов.</p>
-                    </div>
-                    <div class="inner_card">
-                        <span class="stage">07</span>
-                        <p class="stage_up">Тестирование</p>
-                        <p class="stage_low">Программирование сайта с использованием современных технологий и стандартов.</p>
-                    </div>
-                    <div class="inner_card">
-                        <span class="stage">08</span>
-                        <p class="stage_up">Настройка и запуск</p>
-                        <p class="stage_low">Финальная настройка перед публикацией на хостинге.</p>
+                    <div class="inner__card__two">
+                        <div class="stage__inner__card">
+                            <span class="stage">05</span>
+                            <p class="stage__up">Дизайн</p>
+                            <p class="stage__low">Создание эстетически привлекательного интерфейса с учетом UX.</p>
+                        </div>
+        
+                        <div class="stage__inner__card">
+                            <span class="stage">06</span>
+                            <p class="stage__up">Кодинг</p>
+                            <p class="stage__low">Программирование сайта с использованием современных технологий и стандартов.</p>
+                        </div>
+        
+                        <div class="stage__inner__card">
+                            <span class="stage">07</span>
+                            <p class="stage__up">Тестирование</p>
+                            <p class="stage__low">Тестирование функциональности и исправление ошибок перед запуском.</p>
+                        </div>
+        
+                        <div class="stage__inner__card">
+                            <span class="stage">08</span>
+                            <p class="stage__up">Настройка и запуск</p>
+                            <p class="stage__low">Финальная настройка перед публикацией на хостинге.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Личная встреча -->
          <section class="meeting">
-            <div class="meeting">
-                <h2 class="h2_meeting">Личная встреча в Ростове-на-Дону</h2>
-                <img src="" alt="" class="gradient_left">
-                <img src="" alt="" class="rostov">
-                <img src="" alt="" class="gradient_right">
-                <button class="button_black"></button>
+            <div class="container">
+                    <img src="./src/images/meeting.svg" alt="" class="bg">
+                    <a href=""><button class="button__black">Записаться</button></a>
             </div>
         </section>
         <!-- Подвал -->
         <footer>
-            <div class="footer_up">
-                <h3>Обсудим ваш проект?</h3>
-                <button class="button_black">Давайте!</button>
-                <img src="" alt="" class="logo_footer">
+            <div class="footer__up">
+                <div class="footer__up__left">
+                    <h3>Обсудим ваш проект?</h3>
+                    <a href=""><button class="button__black">Давайте!</button></a>
+                </div>
+                <div class="footer__up__right">
+                    <img src="./src/images/logo_footer.svg" alt="" class="logo__footer">
+                </div>
             </div>
-
-            <div class="footer_down">
-                <p class="waited_instagram">*Instagram запрещена на территории РФ</p>
-                <img src="./src/images/icon/telegram_black.svg" alt="Telegram" class="social_network">
-                <img src="./src/images/icon/vk_black.svg" alt="Vk" class="social_network">
-                <img src="./src/images/icon/whatsapp_black.svg" alt="Whatsapp" class="social_networ">
-                <img src="./src/images/icon/instagram_black.svg" alt="Instagram" class="social_network">
+            <div class="footer__center">
+                <p class="waited__instagram">*Instagram запрещена на территории РФ</p>
+                <div class="social__network">
+                    <img src="./src/images/icon/telegram_black.svg" alt="Telegram" class="social__network">
+                    <img src="./src/images/icon/vk_black.svg" alt="Vk" class="social__network">
+                    <img src="./src/images/icon/whatsapp_black.svg" alt="Whatsapp" class="social__network">
+                    <img src="./src/images/icon/instagram_black.svg" alt="Instagram" class="social__network">
+                </div>
+            </div>
+            <div class="footer__down">
                 <p>2024, все права защищены</p>
                 <p>Политика обработки персональных данных</p>
             </div>

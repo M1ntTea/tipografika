@@ -90,12 +90,12 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
 }
-.additional__services_h2 {
+.additional__services__h2 {
   max-width: 19rem;
   display: flex;
   justify-content: flex-start;
 }
-.additional__services_inner {
+.additional__services__inner {
   background-color: #D9D9D9;
   display: flex;
   justify-content: space-between;
