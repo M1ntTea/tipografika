@@ -81,6 +81,21 @@ h2 {
   font-family: 'FuturaPTlight';
   text-align: center;
   display: none;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+}
+.policy h1 {
+  font-family: 'GoogleSans-Medium';
+  font-size: 50px;
+}
+.policy h2,
+h3,
+h4 {
+  font-family: 'GoogleSans-Medium';
+  font-size: 30px;
+}
+.policy p {
+  font-family: 'GoogleSans-Regular';
+  font-size: 17px;
 }
 header {
   position: absolute;
@@ -101,6 +116,10 @@ header {
   position: relative;
   display: block;
   margin: 40px auto 30px;
+}
+.header__social__network {
+  display: flex;
+  gap: 10px;
 }
 @media (max-width: 480px) {
   .container {
@@ -175,7 +194,11 @@ header {
   transition-delay: 0.2s;
 }
 .header ul.menu li.menu-item:nth-child(5) {
+  display: flex;
   transition-delay: 0.15s;
+  margin-top: 15px;
+  border-bottom: 0px;
+  flex-direction: column;
 }
 .header ul.menu li.menu-item:nth-child(6) {
   transition-delay: 0.1s;
@@ -293,6 +316,7 @@ header {
     font-family: 'FuturaPTlight';
     text-align: center;
     display: none;
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
     display: flex;
   }
   .promo {
@@ -341,6 +365,7 @@ header {
   font-family: 'FuturaPTlight';
   text-align: center;
   display: inline-block;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
   margin-right: 0.5rem;
 }
 .container .button__black {
@@ -359,6 +384,7 @@ header {
   font-family: 'FuturaPTlight';
   text-align: center;
   display: inline-block;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
   display: flex;
   margin-left: auto;
 }
@@ -387,6 +413,7 @@ header {
     font-family: 'FuturaPTlight';
     text-align: center;
     display: inline-block;
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
     margin-right: 0.5rem;
     font-size: 23px;
   }
@@ -406,6 +433,7 @@ header {
     font-family: 'FuturaPTlight';
     text-align: center;
     display: inline-block;
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
     display: flex;
     margin-left: auto;
     font-size: 23px;
@@ -454,6 +482,7 @@ header {
     font-family: 'FuturaPTlight';
     text-align: center;
     display: inline-block;
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
     font-size: 17px;
   }
   .business .container .button__black {
@@ -472,6 +501,7 @@ header {
     font-family: 'FuturaPTlight';
     text-align: center;
     display: inline-block;
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
     display: none;
   }
   .business .container .button__black__mobile {
@@ -489,6 +519,7 @@ header {
     font-family: 'FuturaPTlight';
     text-align: center;
     display: none;
+    box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
     font-size: 17px;
     position: absolute;
     display: flex;
@@ -508,6 +539,7 @@ header {
 }
 .works__item {
   position: relative;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
 }
 /* Squares */
 .works__item:nth-child(-n+4) {
@@ -547,7 +579,7 @@ header {
   }
 }
 .services_and_prices {
-  margin-bottom: 240px;
+  margin-bottom: 100px;
 }
 .button__day {
   background: #3A3A3A;
@@ -592,10 +624,12 @@ h3 {
 .card__inner {
   position: relative;
   align-self: start;
+  overflow: hidden;
   background: #D9D9D9;
   border-radius: 5px;
-  width: 100%;
+  width: 49.5%;
   height: 473px;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
 }
 .card__inner__info {
   position: relative;
@@ -607,16 +641,26 @@ h3 {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 15px;
+  gap: 15px;
+}
+.information__top {
+  flex-grow: 0;
 }
 .information__center {
   position: relative;
-  top: -50px;
+  flex-grow: 0;
 }
 .information__center p:nth-child(3) {
   margin-top: 10px;
 }
-.information__center .button__black {
-  margin-top: 20px;
+.information__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.information__bottom .button__black {
+  margin-top: 0;
 }
 .card__inner__info h3 {
   font-family: 'FuturaPTBook';
@@ -629,12 +673,66 @@ h3 {
   position: absolute;
   display: flex;
   justify-content: end;
-  height: 270px;
-  right: 0;
+  right: -5%;
   bottom: 0;
+  max-height: 270px;
 }
 .skeleton {
-  position: absolute;
+  height: 100%;
+}
+@media (max-width: 1370px) {
+  .card__inner__img {
+    max-height: 230px;
+  }
+}
+@media (max-width: 1200px) {
+  .card {
+    flex-wrap: wrap;
+  }
+  .card__inner {
+    width: 100%;
+  }
+  .card__inner__img {
+    max-height: 300px;
+  }
+}
+@media (max-width: 678px) {
+  .card__inner {
+    height: auto;
+  }
+  .card__inner__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
+  .information__bottom {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex: 0 0 auto;
+  }
+  .card__inner__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 15px;
+  }
+  #card__inner__img__1 {
+    right: 0;
+  }
+}
+@media (max-width: 678px) and (min-width: 450px) {
+  .card__inner__img {
+    margin-right: -5px;
+    justify-content: end;
+  }
 }
 .additional__services {
   margin-bottom: 240px;
@@ -658,9 +756,11 @@ h3 {
   padding-right: 20px;
   padding-left: 20px;
   border-radius: 5px;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
 }
 .inner__info {
   display: flex;
+  border-bottom: 1.5px solid #000000;
   align-items: center;
   justify-content: space-between;
   height: 80px;
@@ -683,6 +783,40 @@ h3 {
   margin-left: 0;
   max-width: 150px;
   margin-top: 0;
+}
+.information__button {
+  display: flex;
+  gap: 2.5vw;
+  justify-content: space-between;
+}
+@media (max-width: 1300px) {
+  .additional__services .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 940px) {
+  .inner__info {
+    flex-direction: column;
+    align-items: baseline;
+    height: auto;
+    width: 48%;
+  }
+  .additional__services__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .information__button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .additional__services__inner {
+    flex-direction: column;
+  }
+  .inner__info {
+    width: 100%;
+  }
 }
 /* Basic styling */
 .remotely {
@@ -744,35 +878,114 @@ h3 {
     margin: 0 20px;
   }
 }
-@media (max-width: 776px) {
+@media (max-width: 770px) {
   .container {
     flex-direction: column;
   }
   .remotely__inner {
     margin: 20px 0;
   }
+  .remotely__inner h2 {
+    font-size: 40px;
+  }
+  .remotely__inner p {
+    font-size: 18px;
+  }
+  .figma {
+    margin-left: -20px;
+    margin-top: -35px;
+    width: 50px;
+  }
+  .whatsapp {
+    margin-right: -25px;
+    margin-top: -15px;
+    width: 45px;
+  }
+  .telegram {
+    margin-top: -170px;
+    margin-left: -15px;
+    width: 50px;
+  }
+  .discord {
+    margin-top: -145px;
+    margin-right: -5px;
+    width: 45px;
+  }
 }
-.stages {
-  margin-bottom: 13rem;
+@media (max-width: 560px) {
+  .remotely__inner h2 {
+    font-size: 25px;
+  }
+  .remotely__inner p {
+    font-size: 16px;
+  }
+  .figma {
+    width: 35px;
+    margin-left: -25px;
+    margin-top: -25px;
+  }
+  .whatsapp {
+    width: 30px;
+    margin-right: -20px;
+    margin-top: -5px;
+  }
+  .telegram {
+    width: 30px;
+    margin-top: -138px;
+    margin-left: -3px;
+  }
+  .discord {
+    width: 35px;
+    margin-top: -125px;
+    margin-right: -5px;
+  }
 }
-.inner__card {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+@media (max-width: 480px) {
+  .figma {
+    width: 35px;
+    margin-left: 55px;
+    margin-top: -20px;
+  }
+  .whatsapp {
+    width: 30px;
+    margin-right: 50px;
+    margin-top: -10px;
+  }
+  .telegram {
+    width: 30px;
+    margin-top: -140px;
+    margin-left: 70px;
+  }
+  .discord {
+    width: 35px;
+    margin-top: -125px;
+    margin-right: 65px;
+  }
+}
+@media (max-width: 450px) {
+  .telegram {
+    margin-left: 26px;
+    margin-top: -141px;
+  }
+  .figma {
+    margin-left: 15px;
+  }
+  .whatsapp {
+    margin-right: 0px;
+    margin-top: -5px;
+  }
+  .discord {
+    margin-right: 25px;
+  }
 }
 .stage__inner__card {
-  width: 330px;
   height: 190px;
   background: #D9D9D9;
   border-radius: 5px;
   padding-top: 10px;
   padding-left: 10px;
-}
-.inner__card__one,
-.inner__card__two {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  padding-right: 10px;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
 }
 .stage {
   font-size: 40px;
@@ -780,12 +993,33 @@ h3 {
 .stage__up {
   font-family: 'FuturaPTBook';
 }
-.stage__low {
-  width: 310px;
-}
 .stage__inner__card p {
   font-size: 20px;
   margin-top: 5px;
+}
+.inner__card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+@media (max-width: 1230px) {
+  .inner__card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 950px) {
+  .inner__card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .inner__card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
 }
 .meeting .button__black {
   margin: 0 auto;
@@ -800,6 +1034,7 @@ h3 {
   /* Центрируем элементы по горизонтали */
   width: 100%;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 .meeting .container {
   text-align: center;
@@ -811,20 +1046,33 @@ h3 {
   height: auto;
   /* Сохраняем пропорции */
 }
+@media (max-width: 567px) {
+  .meeting .button__black {
+    padding-top: 0.1em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    margin-top: 2rem;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: -40px;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   background-color: #D9D9D9;
   border-radius: 5px 5px 0px 0px;
-  margin-top: 20rem;
-  height: 450px;
+  margin-top: 10rem;
   padding-top: 40px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
 }
-footer h3 {
+footer h2 {
   font-size: 40px;
 }
 footer .button__black {
@@ -843,6 +1091,7 @@ footer .button__black {
   font-family: 'FuturaPTlight';
   text-align: center;
   display: inline-block;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
   padding-right: 1.55em;
   padding-left: 1.55em;
   font-size: 25px;
@@ -854,7 +1103,9 @@ footer .button__black {
 .footer__center {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
+  gap: 5px;
+  padding-top: 100px;
 }
 .social__network {
   display: flex;
@@ -863,4 +1114,64 @@ footer .button__black {
 .footer__down {
   display: flex;
   justify-content: space-between;
+}
+.logo__footer {
+  margin-top: 10px;
+}
+@media (max-width: 990px) {
+  footer h2 {
+    font-size: 30px;
+  }
+  footer .button__black {
+    font-size: 23px;
+  }
+}
+@media (max-width: 670px) {
+  .footer__up {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__up__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__up__left .button__black {
+    margin-top: 0;
+  }
+  .logo__footer {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 470px) {
+  .footer__center {
+    padding-top: 0px;
+  }
+  footer p {
+    font-size: 11px;
+  }
+  .footer__up__left {
+    display: block;
+  }
+  .footer__up__left .button__black {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .logo__footer {
+    width: 200px;
+    position: relative;
+    top: 36px;
+  }
+}
+@media (max-width: 745px) {
+  footer {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+@media (max-width: 567px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

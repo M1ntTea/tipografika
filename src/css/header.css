@@ -102,6 +102,10 @@ header {
   display: block;
   margin: 40px auto 30px;
 }
+.header__social__network {
+  display: flex;
+  gap: 10px;
+}
 @media (max-width: 480px) {
   .container {
     margin: 0 auto;
@@ -175,7 +179,11 @@ header {
   transition-delay: 0.2s;
 }
 .header ul.menu li.menu-item:nth-child(5) {
+  display: flex;
   transition-delay: 0.15s;
+  margin-top: 15px;
+  border-bottom: 0px;
+  flex-direction: column;
 }
 .header ul.menu li.menu-item:nth-child(6) {
   transition-delay: 0.1s;

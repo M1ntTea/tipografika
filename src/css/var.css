@@ -81,4 +81,19 @@ h2 {
   font-family: 'FuturaPTlight';
   text-align: center;
   display: none;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+}
+.policy h1 {
+  font-family: 'GoogleSans-Medium';
+  font-size: 50px;
+}
+.policy h2,
+h3,
+h4 {
+  font-family: 'GoogleSans-Medium';
+  font-size: 30px;
+}
+.policy p {
+  font-family: 'GoogleSans-Regular';
+  font-size: 17px;
 }

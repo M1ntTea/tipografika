@@ -95,6 +95,7 @@ h2 {
   /* Центрируем элементы по горизонтали */
   width: 100%;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 .meeting .container {
   text-align: center;
@@ -105,4 +106,18 @@ h2 {
   /* Картинка занимает 100% ширины контейнера */
   height: auto;
   /* Сохраняем пропорции */
+}
+@media (max-width: 567px) {
+  .meeting .button__black {
+    padding-top: 0.1em;
+    padding-bottom: 0.25em;
+    padding-right: 1.85em;
+    padding-left: 1.85em;
+    margin-top: 2rem;
+    min-width: 60px;
+    min-height: 25px;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: -40px;
+  }
 }

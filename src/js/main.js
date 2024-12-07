@@ -1,3 +1,4 @@
+// Бургер меню
 (function () {
    const header = document.querySelector('.header');
    const icon = document.querySelector('.icon-container');
