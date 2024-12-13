@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <section class="forma">
+        <div class="form">
+            <form action="" method="get">
+                <h1>Обсудить проект</h1>
+                <p>Оставьте свои контакты, и мы свяжемся с вами</p>
+                    <div class="forma__inner">
+                        <div class="card__input">
+                            <input type="text" name="name" placeholder="Ваше имя" class="input">
+                        </div>
+                            <div class="card__input horizontal-input">
+                                <select name="connection" id="connection" class="select">
+                                    <option value="telephone">Телефон</option>
+                                    <option value="telegram">Telegram</option>
+                                    <option value="whatsapp">Whatsapp</option>
+                                </select>
+                                <input type="text" name="telephone" placeholder="+7 (999) 999-99-99" class="input">
+                            </div>
+                            <div class="card__input" >
+                                <input type="text" name="text" placeholder="Опишите свою задачу (необязательно)" class="input">
+                            </div>
+                            <label for="" class="label">
+                                <input type="checkbox" name="agree"><a href="./policy.html">Я согласен с политикой обработки персональных данных</a>
+                            </label>
+                            <div class="button__form">
+                                <button class="button__black">Отправить</button>
+                            </div>
+                    </div>
+            </form>
+        </div>
+      </section>
+    <script src="./src/js/forma.js"></script>
+</body>
+</html>

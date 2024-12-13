@@ -4,8 +4,31 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  position: relative;
+  outline: none;
+  padding: 5px;
+  padding-right: 40px;
+}
+select:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/put_k_strelke");
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
 main {
   padding-top: 1px;
+  margin: 0 auto;
+}
+body {
+  max-width: 1920px;
   margin: 0 auto;
 }
 @font-face {
@@ -577,6 +600,9 @@ header {
   .business {
     padding-bottom: 100px;
   }
+  .works__item:nth-of-type(5) {
+    height: 93.9vw;
+  }
 }
 .services_and_prices {
   margin-bottom: 100px;
@@ -997,6 +1023,12 @@ h3 {
   font-size: 20px;
   margin-top: 5px;
 }
+.button__expand .button__black {
+  margin: 0 auto;
+}
+.display__none {
+  display: none;
+}
 .inner__card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1174,4 +1206,86 @@ footer .button__black {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+.forma {
+  position: absolute;
+  width: 700px;
+  height: 520px;
+  backdrop-filter: blur(10px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.form {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+}
+.forma h1,
+.forma p {
+  text-align: center;
+}
+.forma__inner {
+  padding: 1rem;
+}
+.card__input {
+  margin-bottom: 1rem;
+}
+.input,
+.select {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-family: 'FuturaPTLight', sans-serif;
+  font-size: 16px;
+  border: 1px solid #000000;
+}
+.input::placeholder {
+  color: #999;
+}
+.label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.card__input:nth-child(3) input {
+  padding-bottom: 9.5rem;
+  padding-top: 1rem;
+}
+form .button__black {
+  background: #3A3A3A;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-right: 1.85em;
+  padding-left: 1.85em;
+  min-width: 60px;
+  min-height: 25px;
+  font-size: 35px;
+  font-family: 'FuturaPTlight';
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+  font-size: 25px;
+  margin-top: 2rem;
+  padding-right: 4em;
+  padding-left: 4em;
+}
+.button__form {
+  display: flex;
+  justify-content: center;
+}
+.horizontal-input {
+  display: flex;
+}
+.horizontal-input .select {
+  margin-right: 0.5rem;
 }
